@@ -15,6 +15,7 @@ header {
     align-items: center;
     text-align: center;
     font-family: 'Refridgerator_Deluxe_Heavy', Arial, sans-serif;
+    text-shadow: 2px 2px 4px #000;
 }
 
 main {
@@ -24,12 +25,14 @@ main {
 footer {
     color: white;
     background-color: #005f41;
-    height: 70px;
-    font-size: 50px;
+    width: 100%;
+    height: 75px; /* Allow the footer to expand to fit its content */
+    font-size: 16px; /* Adjust the font size as needed */
     display: flex;
+    justify-content: center;
     align-items: center;
-    text-align: center;
     font-family: 'Refridgerator_Deluxe_Heavy', Arial, sans-serif;
+    align-self: flex-end;
 }
 
 .tcrimg {
@@ -43,6 +46,43 @@ header h1 {
 }
 
 @font-face {
+    font-family: 'Refridgerator_Deluxe';
+    src: url("assets/fonts/Refrigerator_Deluxe.otf") format(opentype);
+}
+
+@font-face {
     font-family: 'Refridgerator_Deluxe_Heavy';
-    src: url(Refrigerator_Deluxe_Heavy.otf) format(opentype);
+    src: url("assets/fonts/Refrigerator_Deluxe_Heavy.otf") format(opentype);
+}
+
+main.center-table {
+    flex-grow: 1; /* Allow the main content to expand and push the footer to the bottom */
+    display: flex;
+    justify-content: center; /* Center the table horizontally */
+    align-items: center; /* Center the table vertically */
+}
+
+.locationtable {
+    justify-content: center;
+    align-items: center;
+    border-spacing: 25px;
+}
+
+.location {
+    background-color: #005037;
+}
+
+.mainlocation {
+    background-color: #B0BD36;
+}
+
+.locationtext {
+    font-family: 'Refridgerator_Deluxe', Arial, sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
 }
