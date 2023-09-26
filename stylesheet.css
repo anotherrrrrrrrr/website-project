@@ -62,25 +62,24 @@ main.center-table {
     align-items: center; /* Center the table vertically */
 }
 
-.locationtable {
-    justify-content: center;
-    align-items: center;
+.infotable {
     border-spacing: 25px;
 }
 
-.location {
+.infobox {
     background-color: #005037;
 }
 
-.mainlocation {
+.infobox-important {
     background-color: #B0BD36;
 }
 
-.locationtext {
+.infotext {
     font-family: 'Refridgerator_Deluxe', Arial, sans-serif;
     text-align: center;
     color: white;
     font-size: 20px;
+    text-shadow: 2px 2px 4px #000;
 }
 
 a {
