@@ -30,6 +30,7 @@ main {
     flex-grow: 1;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 footer {
@@ -85,7 +86,15 @@ main.center-table {
     justify-content: space-between;
     align-content: end;
     width: 97.5%;
-}   
+}  
+
+.teachercontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: end;
+    width: 75%;
+}
 
 .teachertable {
     border-spacing: 25px;
@@ -97,7 +106,18 @@ main.center-table {
     width: 22.5%;
 }
 
+.teacherbox {
+    background-color: #005037;
+    width: 15%;
+}
+
 .locationpadding {
+    width: 100%;
+    font-size: 300%;
+    opacity: 0;
+}
+
+.teacherpadding {
     width: 100%;
     font-size: 300%;
     opacity: 0;
@@ -106,14 +126,27 @@ main.center-table {
 .locationbox img {
     width: 100%;
 }
+
+.teacherbox img {
+    width: 100%;
+}
+
 @media (max-width: 1023px) and (min-width: 768px) {
     .locationtext {
         font-size: 100%;
+    }
+
+    .teachertext {
+        font-size: 0%;
     }
 }
   
 @media (max-width: 767px) {
     .locationtext {
+        font-size: 75%;
+    }
+
+    .teachertext {
         font-size: 75%;
     }
 }
@@ -141,7 +174,8 @@ main.center-table {
     font-family: 'Refridgerator_Deluxe', Arial, sans-serif;
     text-align: center;
     color: white;
-    font-size: 20px;
+    font-size: 150%;
+    margin: 2.5%;
     text-shadow: 2px 2px 4px black;
 }
 
@@ -228,80 +262,42 @@ nav {
 
 .navbar {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
+    margin-right: 5%;
     background-color: #004b33;
     border-style: solid;
     font-size: 35%;
     align-items: center;
 }
 
-.navblock {
+.menubutton {
     float: left;
-}
-
-.navblock a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.navblock a:hover {
-    background-color: #005037;
-}
-
-.submenu {
-    display: none;
-    position: absolute;
     background-color: #004b33;
-    z-index: 1;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    top: 100%;
-    left: 0;
-}
-
-#menu-button:hover + .submenu,
-.submenu:hover {
-    display: block;
-}
-
-.submenu li {
-    display: block;
-}
-
-.submenu a {
     color: white;
+    padding: 5% 0%;
+    font-size: 50%;
+    font-family: 'Refridgerator_Deluxe_Heavy', Arial, sans-serif;
     text-decoration: none;
-    padding: 8px 16px;
-    display: block;
-    width: 100%;
-    text-align: left;
+    text-decoration-color: white;
+    text-shadow: 2px 2px 4px #000;
+    border: white;
+    border-style:solid;
+    margin-right: 7.5%;
 }
 
-.submenu a:hover {
-    background-color: #005037;
+.menubutton:hover {
+    background-color: #045c40;
 }
 
-#menu-button {
-    margin-right: 3%
+.pageitem {
+    font-family: 'Refridgerator_Deluxe_Heavy', Arial, sans-serif;
+    color:white;
+    text-shadow: 2px 2px 4px #000;
+    font-size: 190%;
+    margin: 0%;
 }
 
-/* Desktop Styles */
-@media (min-width: 1024px) {
-    /* CSS for desktop screens */
-  }
-  
-  /* Tablet Styles */
-  @media (max-width: 1023px) and (min-width: 768px) {
-    /* CSS for tablet screens */
-  }
-  
-  /* Mobile Styles */
-  @media (max-width: 767px) {
-    /* CSS for mobile screens */
-  }
+/* i'm terribly sorry if this breaks anything ok */
+a {
+    color: white;
+}
