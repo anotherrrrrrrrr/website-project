@@ -21,12 +21,22 @@
             <form action="#">
                 <label for="vnaam">Voornaam:</label><br>
                 <input type="text" id="vnaam" name="voornaam" required><br>
+
                 <label for="anaam">Achternaam:</label><br>
                 <input type="text" id="anaam" name="achternaam" required><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="date">Datum:</label><br>
+                <input type="date" id="date" name="date" value="2023-10-23" min="2023-10-23" max="2023-10-23" required><br>
+
                 <label for="pcode">Postcode:</label><br>
                 <input type="text" id="pcode" name="postcode" pattern="[0-9]{4}[a-zA-Z]{2}" required><br>
+
                 <label for="hnum">Huisnummer:</label><br>
                 <input type="number" id="hnum" name="huisnummer" min="1" required><br><br>
+
                 <input type="submit" value="Submit">
             </form> 
             <iframe src="https://www.youtube.com/embed/h3_fINhe0c4?si=S_0q-bMv1Dg-9wSe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
